@@ -1,0 +1,68 @@
+.download {
+  min-height: 270px;
+  background-color: $darkgray;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.download__link {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.download__link--app {
+  font-family: "OpenSans bold", sans-serif;
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border: solid 3px $white;
+  border-radius: 26px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 36px;
+  padding-right: 36px;
+  margin-top: 27px;
+}
+
+.download__link--apple {
+  margin-top: 32px;
+}
+
+.download__link--android {
+  margin-top: 40px;
+  margin-left: 34px;
+  margin-right: 36px;
+}
+
+.download__link--microsoft {
+  margin-top: 42px;
+}
+
+.download__link--apple img {
+  width: 49px;
+}
+
+.download__link--android img {
+  width: 43px;
+}
+
+.download__link--microsoft img {
+  width: 43px;
+}
+
+.download__platforms {
+  font-family: 'OpenSans light', sans-serif;
+  color: $white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 22px;
+}

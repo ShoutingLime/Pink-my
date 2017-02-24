@@ -1,0 +1,15 @@
+.price {
+  width: 320px;
+  height: 390px;
+  position: relative;
+  top: 230px;
+  overflow: hidden;
+}
+
+.price__bottom {
+  width: 320px;
+  height: 100px;
+  background-color: $lightgray;
+  position: relative;
+  top: 266px;
+}
