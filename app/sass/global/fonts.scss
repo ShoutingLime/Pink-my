@@ -6,7 +6,12 @@
   font-family: 'Open Sans';
   src: url('/fonts/opensans.woff') format('woff'),
   url('/fonts/opensans.woff2') format('woff2');
+}
 
+@font-face {
+  font-family: 'Open Sans regular';
+  src: url('/fonts/opensansregular.woff') format('woff'),
+  url('/fonts/opensansregular.woff2') format('woff2');
 }
 
 @font-face {

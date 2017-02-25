@@ -15,6 +15,8 @@ var gulp = require('gulp'),
   cache = require('gulp-cache'),
   postcss = require('gulp-postcss'),
   autoprefixer = require('gulp-autoprefixer'),
+  svgstore = require('gulp-svgstore'),
+  svgmin = require('gulp-svgmin'),
   bourbon = require('node-bourbon'),
   ftp = require('vinyl-ftp'),
 
@@ -69,6 +71,17 @@ gulp.task('imagemin', function () {
   return gulp.src('app/img/**/*')
     .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('symbols', function () {
+  'use strict';
+  return gulp.src("app/img/icons/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('symbols.svg'))
+    .pipe(gulp.dest('app/img'));
 });
 
 gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function () {

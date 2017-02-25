@@ -1,4 +1,4 @@
-.page-header {
+.page-header--index {
   display: flex;
   flex-direction: column;
   min-height: 462px;
@@ -6,4 +6,30 @@
   background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
   background-position: 0 176px, -190px 0;
   background-repeat: no-repeat, no-repeat;
+}
+
+.page-header--photo {
+  display: flex;
+  flex-direction: column;
+  min-height: 237px;
+  background-color: $gray;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: -190px 0;
+  background-repeat: no-repeat;
+}
+
+.page-header--form {
+
+}
+
+.page-header__competition-title {
+  color: $white;
+  font-family: 'OpenSans light', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 35px;
 }

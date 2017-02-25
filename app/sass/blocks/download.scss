@@ -30,28 +30,28 @@
 }
 
 .download__link--apple {
-  margin-top: 32px;
+  margin-top: -15px;
 }
 
 .download__link--android {
-  margin-top: 40px;
-  margin-left: 34px;
-  margin-right: 36px;
+  margin-top: -10px;
+  margin-left: 33px;
+  margin-right: 37px;
 }
 
 .download__link--microsoft {
-  margin-top: 42px;
+  margin-top: -10px;
 }
 
-.download__link--apple img {
-  width: 49px;
+.logo-apple {
+  width: 46px;
 }
 
-.download__link--android img {
+.logo-android {
   width: 43px;
 }
 
-.download__link--microsoft img {
+.logo-microsoft {
   width: 43px;
 }
 
@@ -64,5 +64,5 @@
   text-align: center;
   margin-left: 25px;
   margin-right: 25px;
-  margin-top: 22px;
+  margin-top: -28px;
 }
