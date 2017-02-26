@@ -14,21 +14,24 @@
   margin-top: 35px;
 }
 
-.userphoto__tools--crop {
+.icon-editor-crop {
+  width: 48px;
   position: relative;
   left: -62px;
   cursor: pointer;
 }
 
-.userphoto__tools--fill {
+.icon-editor-fill {
   position: relative;
+  width: 48px;
   top: 2px;
   left: -30px;
   cursor: pointer;
 }
 
-.userphoto__tools--brightness {
+.icon-editor-contrast {
   position: relative;
+  width: 32px;
   top: 8px;
   left: 10px;
   cursor: pointer;
