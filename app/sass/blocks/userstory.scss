@@ -1,7 +1,6 @@
 .userstory {
   display: block;
   position: relative;
-  top: 37px;
 }
 
 .userstory__promo {
@@ -220,7 +219,7 @@
   content: "";
   display: inline-block;
   background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
-  <circle fill="$pink" cx="10" cy="10" r="7.5"/></svg>');
+  <circle fill="#d22856" cx="10" cy="10" r="7.5"/></svg>');
   background-repeat: no-repeat;
   background-position: 8px 8px;
   background-size: 35px 35px;
@@ -271,6 +270,7 @@
   position: relative;
   width: 280px;
   height: 63px;
+  font-family: "OpenSans bold", sans-serif;
   color: $white;
   font-size: 18px;
   font-weight: 700;

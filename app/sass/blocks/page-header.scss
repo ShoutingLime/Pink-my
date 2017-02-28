@@ -19,7 +19,13 @@
 }
 
 .page-header--form {
-
+  display: flex;
+  flex-direction: column;
+  min-height: 237px;
+  background-color: $gray;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: -190px 0;
+  background-repeat: no-repeat;
 }
 
 .page-header__competition-title {
