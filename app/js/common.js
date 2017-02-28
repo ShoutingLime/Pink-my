@@ -4,11 +4,12 @@ var navMain = document.querySelector('.main-nav'),
   navToggle = document.querySelector('.main-nav__toggle'),
   mainNavList = document.querySelector('.main-nav__list'),
   logo = document.querySelector('.logo'),
+  pageHeader = document.querySelector('.page-header'),
   pageHeaderIndex = document.querySelector('.page-header--index'),
   pageHeaderPhoto = document.querySelector('.page-header--photo'),
   pageHeaderForm = document.querySelector('.page-header--form');
 
-navMain.classList.remove('main-nav--nojs');
+pageHeader.classList.remove('page-header--nojs');
 logo.style.borderBottom = 'none';
 
 navToggle.addEventListener('click', function (event) {
