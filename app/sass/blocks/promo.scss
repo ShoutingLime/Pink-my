@@ -2,8 +2,21 @@
   top: 250px;
   position: relative;
   width: 320px;
-  height: 755px;
+  height: 775px;
   background-color: $lightgray;
+  @media ($tablet-widths) {
+    top: 293px;
+    width: 700px;
+    height: 495px;
+    //padding-top: 226px;
+    outline: 1px solid blue;
+  }
+}
+
+.promo__headers {
+  @media ($tablet-widths) {
+    min-height: 293px;
+  }
 }
 
 .promo::before {
@@ -16,6 +29,11 @@
   border-width: 15px 160px;
   border-left-color: transparent;
   border-top-color: transparent;
+  @media ($tablet-widths) {
+    top: -55px;
+    outline: 1px solid red;
+    border-width: 27px 350px;
+  }
 }
 
 .promo__header {
@@ -27,10 +45,28 @@
   margin-top: -239px;
   line-height: 29px;
   margin-bottom: 268px;
+  @media ($tablet-widths) {
+    margin-top: -288px;
+    font-size: 40px;
+  }
+}
+
+.promo__header--tablet {
+  @media ($tablet-widths) {
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 48px;
+    margin-top: -259px;
+  }
 }
 
 .promo__features {
   margin-top: -160px;
+  @media ($tablet-widths) {
+    margin-top: -310px;
+    margin-left: 349px;
+    margin-right: auto;
+  }
 }
 
 .promo__feature-slogan {
@@ -42,6 +78,9 @@
   text-align: center;
   margin-bottom: -5px;
   margin-top: 5px;
+  @media ($tablet-widths) {
+    text-align: left;
+  }
 }
 
 .promo__feature-text {
@@ -53,4 +92,10 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 26px;
+  @media ($tablet-widths) {
+    padding-left: 0;
+    padding-right: 30px;
+    text-align: left;
+    margin-bottom: 29px;
+  }
 }

@@ -1,0 +1,11 @@
+.intro {
+  @media ($mobile-widths-only) {
+    display: none;
+  }
+  @media ($tablet-widths) {
+    min-height: 533px;
+    margin-top: -270px;
+    background-color: $gray;
+    width: 340px;
+  }
+}

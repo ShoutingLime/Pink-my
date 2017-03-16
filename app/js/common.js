@@ -12,6 +12,16 @@ var navMain = document.querySelector('.main-nav'),
 pageHeader.classList.remove('page-header--nojs');
 logo.style.borderBottom = 'none';
 
+window.addEventListener('resize', function (event) {
+  'use strict';
+  event.preventDefault();
+  if (window.matchMedia('(max-width: 699px)').matches) {
+    logo.style.paddingBottom = '25px';
+  } else {
+    logo.style.paddingBottom = '43px';
+  }
+});
+
 navToggle.addEventListener('click', function (event) {
   'use strict';
   event.preventDefault();
@@ -20,7 +30,11 @@ navToggle.addEventListener('click', function (event) {
     navMain.classList.add('main-nav--opened');
     mainNavList.style.display = 'block';
     logo.style.borderBottom = 'solid 1px black';
-    logo.style.paddingBottom = '25px';
+    if (window.matchMedia('(max-width: 699px)').matches) {
+      logo.style.paddingBottom = '25px';
+    } else {
+      logo.style.paddingBottom = '43px';
+    }
     if (pageHeaderIndex) {
       pageHeaderIndex.style.backgroundPosition = '0 435px, -190px 259px';
       pageHeaderIndex.style.minHeight = '721px';
@@ -36,6 +50,11 @@ navToggle.addEventListener('click', function (event) {
     navMain.classList.add('main-nav--closed');
     mainNavList.style.display = 'none';
     logo.style.borderBottom = 'none';
+    if (window.matchMedia('(max-width: 699px)').matches) {
+      logo.style.paddingBottom = '25px';
+    } else {
+      logo.style.paddingBottom = '43px';
+    }
     if (pageHeaderIndex) {
       pageHeaderIndex.style.backgroundPosition = '0 176px, -190px 0';
       pageHeaderIndex.style.minHeight = '462px';

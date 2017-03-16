@@ -56,6 +56,7 @@
 <main class="page-content">
   <section class="download">
     <h2 class="visually-hidden">Загрузки</h2>
+    <div class="download__slogan">Взгляните<br> на жизнь<br> иначе!</div>
     <a class="download__link download__link--app"
         href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
     <div class="download__link">
@@ -81,29 +82,34 @@
     <p class="download__platforms">Доступно для iPhone, iPad, Android,
       Windows Phone, OS X, Windows 8</p>
   </section>
+  <section class="intro"></section>
   <section class="promo">
     <h2 class="visually-hidden">Преимущества приложения</h2>
     <div class="promo__headers">
       <p class="promo__header">Устали от серости мегаполиса?</p>
-      <p class="promo__header">Нам есть, что вам предложить!</p>
+      <p class="promo__header promo__header--tablet">Нам есть, что вам предложить!</p>
     </div>
     <div class="promo__features">
       <h3 class="promo__feature-slogan">Поднимает настроение</h3>
-      <p class="promo__feature-text">Приложение позволит вам победить осеннюю
-        хандру
-        и депрессию буквально в несколько кликов!</p>
+      <p class="promo__feature-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
       <h3 class="promo__feature-slogan">Меняет мир вокруг</h3>
-      <p class="promo__feature-text">Сделайте снимок и украсьте его смайликом
-        или
-        текстовой подписью, чтобы усилить эффект</p>
+      <p class="promo__feature-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       <h3 class="promo__feature-slogan">Заводит новых друзей</h3>
-      <p class="promo__feature-text">Ставьте лайки, комментируте, делитесь
-        фотографиями с друзьями и заводите новых</p>
+      <p class="promo__feature-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
     </div>
     <div class="promo-image"></div>
   </section>
   <section class="reviews">
     <h2 class="visually-hidden">Отзывы о приложении</h2>
+    <div class="reviews__proof">
+      <div class="reviews__proof--left"></div>
+      <div class="reviews__proof--right">
+        <h3>Эффект<br>
+на 24 часа!</h3>
+        <p>Британские ученые провели исследования и доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!<p>
+        <a href="#">Узнать больше об исследовании</a>
+      </div>
+    </div>
     <input type="radio" id="btn-1" name="toggle" checked>
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
@@ -112,20 +118,18 @@
         <div class="reviews__slider">
           <div class="reviews__item" id="slide1">
             <p class="reviews__review-author">Николай Петров</p>
-            <p class="reviews__review-text">«Это приложение перевернуло мой мир
-              и
-              позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился
-              со своей будущей женой в комментариях к выложенной
-              фотографии!»</p>
+            <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <span class="reviews__about-author">25 лет, водитель трамвая</span>
           </div>
           <div class="reviews__item" id="slide2">
             <p class="reviews__review-author">Петр Николаев</p>
             <p class="reviews__review-text">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at atque, blanditiis id minima molestiae nesciunt perspiciatis provident, quae quisquam ratione sed ut veritatis voluptas»</p>
+            <span class="reviews__about-author">88 лет, извозчик</span>
           </div>
           <div class="reviews__item" id="slide3">
             <p class="reviews__review-author">Lorem Ipsum</p>
             <p class="reviews__review-text">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at atque, blanditiis id minima molestiae nesciunt perspiciatis provident, quae quisquam ratione sed ut veritatis voluptas»</p>
+            <span class="reviews__about-author">52 года, преподаватель латыни</span>
           </div>
           <div class="reviews__slider-controls">
             <label for="btn-1"></label>
@@ -145,6 +149,7 @@
     <div class="versions__wrapper">
       <div class="versions__content-wrapper">
         <ul>
+          <li class="versions_column-left"></li>
           <li>База</li>
           <li class="hit">
             <svg class="bg-hit" viewbox="0 0 74 73">
@@ -154,11 +159,13 @@
           <li>Анлим</li>
         </ul>
         <ul>
+          <li class="versions_column-left"></li>
           <li>1,99 usd</li>
           <li>3,99 usd</li>
           <li>9,99 usd</li>
         </ul>
         <ul>
+          <li class="versions_column-left">Розовый фильтр</li>
           <li>Розовый фильтр
             <svg class="icon-yes" viewbox="-3 1 21.698 16.09">
               <use xlink:href="#icon-yes" />
@@ -176,6 +183,7 @@
           </li>
         </ul>
         <ul>
+          <li class="versions_column-left">Смайлики</li>
           <li>Смайлики
             <svg class="icon-no" viewbox="0 0 26.752 26.752">
               <use xlink:href="#icon-no" />
@@ -193,6 +201,7 @@
           </li>
         </ul>
         <ul>
+          <li class="versions_column-left">Комментарии</li>
           <li>Комментарии
             <svg class="icon-no" viewbox="0 0 26.752 26.752">
               <use xlink:href="#icon-no" />
@@ -246,6 +255,50 @@
     </div>
   </section>
 </main>
+<footer class="page-footer page-footer--index">
+  <a class="footer-logo footer-logo--index" href="index.html">
+    <svg class="logo-pink-blue-mobile" viewbox="0 0 146.3 40.375">
+      <use xlink:href="#logo-pink-blue-mobile" />
+    </svg>
+  </a>
+  <div class="footer-socnet">
+    <ul class="footer-socnet__icons">
+      <li>
+        <a class="footer-socnet__icons footer-socnet__icons--icon-twitter"
+           href="#">
+          <svg class="icon-twitter" viewbox="0 0 17.5 14.663">
+            <use xlink:href="#icon-twitter" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="footer-socnet__icons footer-socnet__icons--icon-facebook"
+           href="#">
+          <svg class="icon-facebook" viewbox="0 0 8.673 18.944">
+            <use xlink:href="#icon-facebook" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="footer-socnet__icons footer-socnet__icons--icon-youtube"
+           href="#">
+          <svg class="icon-youtube" viewbox="0 0 14.64 13.96">
+            <use xlink:href="#icon-youtube" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-copyright">
+    <span class="footer-copyright__text">Разработано</span>
+    <a class="footer-copyright__logo-htmlacademy"
+       href="https://htmlacademy.ru/">
+      <svg class="logo-htmlacademy" viewbox="0 0 26.943 34.09">
+        <use xlink:href="#logo-htmlacademy" />
+      </svg>
+    </a>
+  </div>
+</footer>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

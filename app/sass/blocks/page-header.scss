@@ -1,11 +1,19 @@
 .page-header--index {
   display: flex;
   flex-direction: column;
-  min-height: 462px;
   background-color: $gray;
-  background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
-  background-position: 0 176px, -190px 0;
-  background-repeat: no-repeat, no-repeat;
+  @media ($mobile-widths-only) {
+    min-height: 462px;
+    background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+    background-position: 0 176px, -190px 0;
+    background-repeat: no-repeat, no-repeat;
+  }
+  @media ($tablet-widths) {
+    min-height: 729px;
+  }
+  @media ($desktop-widths) {
+    min-height: 853px;
+  }
 }
 
 .page-header--photo {

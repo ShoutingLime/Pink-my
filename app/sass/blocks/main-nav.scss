@@ -17,33 +17,37 @@
   content: '';
   position: absolute;
   top: 0;
+  height: 66px;
+  background-color: $darkgray;
+  opacity: 0.3;
+  z-index: -10;
   @media ($mobile-widths-only) {
     width: 320px;
   }
   @media ($tablet-widths) {
     width: 700px;
+    height: 110px;
   }
   @media ($desktop-widths) {
     width: 1200px;
   }
-  height: 66px;
-  background-color: $darkgray;
-  opacity: 0.3;
-  z-index: -10;
+
 }
 
 /* гамбургер или крестик */
 .main-nav__toggle {
   position: absolute;
-  top: 20px;
   @media ($mobile-widths-only) {
     left: 250px;
+    top: 20px;
   }
   @media ($tablet-widths) {
-    left: 630px;
+    left: 610px;
+    top: 43px;
   }
   @media ($desktop-widths) {
     left: 1130px;
+    top: 20px;
   }
   display: block;
   width: 50px;
@@ -75,15 +79,17 @@
 
 /* крестик */
 .main-nav--opened .main-nav__toggle {
-  top: 20px;
   @media ($mobile-widths-only) {
     left: 277px;
+    top: 20px;
   }
   @media ($tablet-widths) {
-    left: 657px;
+    left: 637px;
+    top: 43px;
   }
   @media ($desktop-widths) {
     left: 1157px;
+    top: 43px;
   }
   width: 24px;
   height: 24px;

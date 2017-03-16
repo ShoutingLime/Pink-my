@@ -5,15 +5,18 @@
     clear: both;
   }
 }
-/*
-@mixin container {
-  width: 320px;
-  margin: 0 auto;
-  @media (min-width: 768px) {
-    width: 640px;
+
+/*@mixin container {
+  @media ($mobile-widths-only) {
+    width: 320px;
+    margin: 0 auto;
   }
-  @media (min-width: 1200px) {
-    width: 960px;
+  @media ($tablet-widths) {
+    width: 700px;
+    padding: 0 40px;
   }
-}
-*/
+  @media ($desktop-widths) {
+    width: 1200px;
+    padding: 0 120px;
+  }
+}*/

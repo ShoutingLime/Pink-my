@@ -13,7 +13,12 @@ input[type=radio] {
   line-height: 30px;
   text-transform: uppercase;
   border-collapse: collapse;
-}
+    @media ($tablet-widths) {
+      width: 620px;
+      left: 300px;
+      top: 0;
+    }
+  }
 
 .versions__content-wrapper ul {
   display: table-row;
@@ -26,7 +31,7 @@ input[type=radio] {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  height: 30px;
+  height: 31px;
   padding-top: 15px;
   padding-left: 0;
   padding-bottom: 2px;
@@ -34,6 +39,21 @@ input[type=radio] {
   vertical-align: middle;
   border-top: none;
   border-bottom: none;
+  @media ($tablet-widths) {
+    padding-top: 19px;
+    padding-bottom: 0;
+    font-size: 16px;
+    height: 20px;
+    line-height: 15px;
+  }
+}
+
+.versions__content-wrapper ul:nth-child(1) li:nth-child(1) {
+  @media ($tablet-widths) {
+    background-color: $lightgray;
+    width: 157px;
+    border: none;
+  }
 }
 
 .versions__content-wrapper ul:nth-child(2) li {
@@ -51,7 +71,22 @@ input[type=radio] {
   vertical-align: middle;
   border-top: none;
   border-bottom: none;
+  @media ($tablet-widths) {
+    font-size: 18px;
+    height: 14px;
+    line-height: 14px;
+    padding-top: 9px;
+    padding-bottom: 16px;
+  }
 }
+
+.versions__content-wrapper ul:nth-child(2) li:nth-child(1) {
+   @media ($tablet-widths) {
+     background-color: $lightgray;
+     width: 157px;
+     border: none;
+   }
+ }
 
 .versions__content-wrapper ul:nth-child(3) li {
   border-top: none;
@@ -67,6 +102,14 @@ input[type=radio] {
   padding-top: 15px;
   padding-bottom: 14px;
   color: $gray;
+  @media ($tablet-widths) {
+    width: 155px;
+    height: 30px;
+    font-size: 0;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-left: 0;
+  }
 }
 
 .versions__content-wrapper--table {
@@ -94,6 +137,10 @@ input[type=radio] {
   top: 0;
   left: -21px;
   fill: #f25b26;
+  @media ($tablet-widths) {
+    left: -64px;
+    top: -1px;
+  }
 }
 
 .icon-yes {
@@ -106,6 +153,10 @@ input[type=radio] {
   top: 0;
   left: -20px;
   fill: #3dc644;
+  @media ($tablet-widths) {
+    left: -61px;
+    top: -3px;
+  }
 }
 
 .bg-hit {
@@ -118,6 +169,11 @@ input[type=radio] {
   top: -1px;
   left: 279px;
   z-index: 20;
+  @media ($tablet-widths) {
+    width: 60px;
+    height: 60px;
+    left: 311px;
+  }
 }
 
 .versions__content-wrapper ul:nth-child(1) li:nth-child(2)::after {
@@ -134,6 +190,9 @@ input[type=radio] {
   top: 10px;
   left: 291px;
   z-index: 25;
+  @media ($tablet-widths) {
+    left: 319px;
+  }
 }
 
 .versions__slider-controls {
@@ -142,6 +201,9 @@ input[type=radio] {
   left: 128px;
   z-index: 20;
   font-size: 0;
+  @media ($tablet-widths) {
+    display: none;
+  }
 }
 
 .versions__slider-controls label {
@@ -165,4 +227,75 @@ input[type=radio] {
 #btn-6:checked ~ .versions__slider-controls label[for="btn-6"] {
   background-color: $white;
   border: 3px solid $gray;
+}
+
+ul li.versions_column-left {
+  @media ($mobile-widths-only) {
+    display: none;
+  }
+  @media ($tablet-widths) {
+    width: 139px;
+    height: 30px;
+    padding-right: 0;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 33px;
+    text-transform: none;
+    border-collapse: collapse;
+    border-top: none;
+    border-right: none;
+  }
+}
+
+.versions__content-wrapper ul:nth-child(1) li:nth-child(2) {
+   @media ($tablet-widths) {
+     width: 155px;
+     border-left: none;
+   }
+ }
+
+.versions__content-wrapper ul:nth-child(2) li:nth-child(2) {
+  @media ($tablet-widths) {
+    width: 155px;
+    border-left: none;
+  }
+}
+
+.versions__content-wrapper ul:nth-child(1) li:nth-child(4) {
+  @media ($tablet-widths) {
+    width: 155px;
+    border-right: none;
+  }
+}
+
+.versions__content-wrapper ul:nth-child(2) li:nth-child(4) {
+  @media ($tablet-widths) {
+    width: 155px;
+    border-right: none;
+  }
+}
+
+.versions__content-wrapper ul:nth-child(n + 3) li {
+  @media ($tablet-widths) {
+    background-color: $white;
+  }
+}
+
+.versions__content-wrapper ul:nth-child(n + 4) li {
+  @media ($tablet-widths) {
+    background-color: $white;
+  }
+}
+
+.versions__content-wrapper ul:nth-child(n + 5) li {
+  @media ($tablet-widths) {
+    background-color: $white;
+  }
+}
+
+.versions__content-wrapper ul:nth-child(3) li:nth-child(1) {
+  @media ($tablet-widths) {
+    border-top: solid 2px #e5e5e5;
+  }
 }

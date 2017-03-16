@@ -1,12 +1,31 @@
 .page-footer {
-  display: block;
-  position: relative;
-  top: 26px;
-  margin-top: 41px;
+    display: block;
+    position: relative;
+    top: 26px;
+    margin-top: 41px;
+  }
+
+.page-footer--index {
+  @media ($mobile-widths) {
+    display: none;
+  }
+  @media ($tablet-widths) {
+    display: block;
+    top: 190px;
+    font-size: 0;
+    @include clearfix;
+  }
 }
 
 .footer-logo {
   margin-left: 86px;
+  @media ($tablet-widths) {
+    width: 190px;
+    float: left;
+    margin-left: 0;
+    padding-left: 39px;
+    padding-top: 36px;
+  }
 }
 
 .logo-pink-blue-mobile {
@@ -14,9 +33,21 @@
   height: 40px;
 }
 
+.footer-socnet {
+  @media ($tablet-widths) {
+    float: left;
+    width: 250px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
 .footer-socnet__icons {
   list-style: none;
   min-height: 70px;
+  @media ($tablet-widths) {
+    margin-left: 0;
+  }
 }
 
 .icon-twitter {
@@ -29,6 +60,9 @@
   top: 36px;
   left: 48px;
   fill: $pink;
+  @media ($tablet-widths) {
+    left: 7px;
+  }
 }
 
 .icon-facebook {
@@ -41,6 +75,9 @@
   top: 34px;
   left: 42px;
   fill: $pink;
+  @media ($tablet-widths) {
+    left: 0;
+  }
 }
 
 .icon-youtube {
@@ -53,6 +90,9 @@
   top: 36px;
   left: 39px;
   fill: $pink;
+  @media ($tablet-widths) {
+    left: -1px;
+  }
 }
 
 .footer-socnet__icons--icon-twitter::after {
@@ -66,6 +106,9 @@
   position: relative;
   top: 19px;
   left: 13px;
+  @media ($tablet-widths) {
+    left: -29px;
+  }
 }
 
 .footer-socnet__icons--icon-facebook::after {
@@ -79,6 +122,9 @@
   position: relative;
   top: 19px;
   left: 7px;
+  @media ($tablet-widths) {
+    left: -35px;
+  }
 }
 
 .footer-socnet__icons--icon-youtube::after {
@@ -92,6 +138,30 @@
   position: relative;
   top: 19px;
   left: 4px;
+  @media ($tablet-widths) {
+    left: -35px;
+  }
+}
+
+.footer-copyright {
+  @media ($tablet-widths) {
+    width: 200px;
+    float: right;
+  }
+}
+
+.footer-copyright__text {
+  @media ($tablet-widths) {
+    margin-left: 30px;
+    margin-top: 26px;
+  }
+}
+
+.footer-copyright__logo-htmlacademy svg{
+  @media ($tablet-widths) {
+    position: relative;
+    left: -39px;
+  }
 }
 
 .page-footer--form {

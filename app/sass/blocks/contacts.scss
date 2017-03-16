@@ -1,6 +1,10 @@
 .contacts {
   position: relative;
-  top: 230px;
+  top: 248px;
+  width: 320px;
+  @media ($tablet-widths) {
+    width: 700px;
+  }
 }
 
 .contacts__header {
@@ -11,6 +15,13 @@
   font-weight: 400;
   text-align: center;
   margin-top: 32px;
+  @media ($tablet-widths) {
+    margin-top: 45px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .contacts__list {
@@ -18,6 +29,18 @@
   margin-top: 33px;
   text-align: center;
   margin-right: 36px;
+  @media ($tablet-widths) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.contacts__item {
+  @media ($tablet-widths) {
+    width: 50%;
+    margin-top: 3px;
+  }
 }
 
 .contacts__text {
@@ -39,14 +62,39 @@
   font-weight: 100;
   text-decoration: none;
   margin-bottom: 20px;
+  @media ($tablet-widths) {
+    margin-top: 1px;
+    margin-left: -13px;
+  }
+}
+
+.contacts__link--mail {
+  @media ($tablet-widths) {
+    margin-top: 3px;
+    margin-left: 2px;
+  }
+}
+
+li.contacts__item:nth-child(1) b {
+  padding-bottom: 3px;
+  @media ($tablet-widths) {
+    margin-left: -13px;
+  }
 }
 
 li.contacts__item:nth-child(2) b {
   padding-bottom: 3px;
+  @media ($tablet-widths) {
+    margin-left: 3px;
+  }
 }
 
 li.contacts__item:nth-child(3) b {
   padding-top: 3px;
+  @media ($tablet-widths) {
+    margin-top: 18px;
+    margin-left: -2px;
+  }
 }
 
 .contacts__address {
@@ -58,6 +106,11 @@ li.contacts__item:nth-child(3) b {
   font-weight: 400;
   text-decoration: none;
   margin-top: 2px;
+  @media ($tablet-widths) {
+    margin-top: 6px;
+    margin-left: 12px;
+    margin-right: 15px;
+  }
 }
 
 .contacts__map {
@@ -66,7 +119,12 @@ li.contacts__item:nth-child(3) b {
   top: 15px;
   height: 202px;
   overflow: hidden;
-
+  @media ($tablet-widths) {
+    width: 700px;
+    height: 378px;
+    background-color: $lightgray;
+    top: -17px;
+  }
 }
 
 .icon-map-marker {
@@ -79,11 +137,15 @@ li.contacts__item:nth-child(3) b {
   top: 91px;
   left: 141px;
   z-index: 40;
+  @media ($tablet-widths) {
+    top: 196px;
+    left: 330px;
+  }
 }
 
 .contacts::after {
   position: absolute;
-  top: 372px;
+  top: 404px;
   display: block;
   content: "";
   border-style: solid;
@@ -93,4 +155,8 @@ li.contacts__item:nth-child(3) b {
   border-bottom-color: transparent;
   border-right-color: transparent;
   z-index: 30;
+  @media ($tablet-widths) {
+    top: 401px;
+    border-width: 70px 350px;
+  }
 }
