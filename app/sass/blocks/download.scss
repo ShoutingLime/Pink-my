@@ -12,12 +12,18 @@
   @media ($tablet-widths) {
     width: 350px;
     min-height: 533px;
-    margin-top: -270px;
+    margin-top: -533px;
     padding-left: 10px;
     background-color: $gray;
+    outline: 1px solid red;
   }
   @media ($desktop-widths) {
-    width: 724px;
+    width: 600px;
+    height: 853px;
+    margin-top: -853px;
+    padding-left: 10px;
+    background-color: $gray;
+    outline: 1px solid red;
   }
 }
 
@@ -45,6 +51,12 @@
     padding-left: 43px;
     padding-right: 45px;
   }
+  @media ($desktop-widths) {
+    margin-left: -60px;
+    padding-left: 30px;
+    padding-right: 28px;
+    font-size: 21px;
+  }
 }
 
 .download__link--apple {
@@ -53,6 +65,10 @@
     margin-top: -3px;
     margin-left: 5px;
     background-color: transparent;
+  }
+  @media ($desktop-widths) {
+    margin-top: 16px;
+    margin-left: -62px;
   }
 }
 
@@ -63,12 +79,21 @@
   @media ($tablet-widths) {
     margin-top: -1px;
   }
+  @media ($desktop-widths) {
+    margin-top: 23px;
+    margin-left: 35px;
+    margin-right: 0;
+  }
 }
 
 .download__link--microsoft {
   margin-top: -10px;
   @media ($tablet-widths) {
     margin-top: 3px;
+  }
+  @media ($desktop-widths) {
+    margin-top: 25px;
+    margin-left: 35px;
   }
 }
 
@@ -100,6 +125,11 @@
     margin-right: 20px;
     margin-top: -15px;
   }
+  @media ($desktop-widths) {
+    margin-left: 90px;
+    margin-right: 150px;
+    margin-top: 3px;
+  }
 }
 
 .download__slogan {
@@ -119,5 +149,10 @@
   }
   @media ($desktop-widths) {
     display: block;
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 218px;
+    margin-left: -60px;
+    margin-bottom: 24px;
   }
 }

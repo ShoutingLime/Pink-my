@@ -35,7 +35,7 @@
     </div>
     <button class="main-nav__toggle" id="toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--tape">
         <li class="main-nav__item main-nav__item--active">
           <a class="main-nav__link main-nav__link--main">Главная</a>
         </li>
@@ -90,12 +90,18 @@
       <p class="promo__header promo__header--tablet">Нам есть, что вам предложить!</p>
     </div>
     <div class="promo__features">
-      <h3 class="promo__feature-slogan">Поднимает настроение</h3>
-      <p class="promo__feature-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      <h3 class="promo__feature-slogan">Меняет мир вокруг</h3>
-      <p class="promo__feature-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      <h3 class="promo__feature-slogan">Заводит новых друзей</h3>
-      <p class="promo__feature-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      <div class="promo__feature">
+        <h3 class="promo__feature-slogan">Поднимает настроение</h3>
+        <p class="promo__feature-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </div>
+      <div class="promo__feature">
+        <h3 class="promo__feature-slogan">Меняет мир вокруг</h3>
+        <p class="promo__feature-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+      <div class="promo__feature">
+        <h3 class="promo__feature-slogan">Заводит новых друзей</h3>
+        <p class="promo__feature-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
     </div>
     <div class="promo-image"></div>
   </section>
@@ -104,8 +110,7 @@
     <div class="reviews__proof">
       <div class="reviews__proof--left"></div>
       <div class="reviews__proof--right">
-        <h3>Эффект<br>
-на 24 часа!</h3>
+        <h3>Эффект на&nbsp;24&nbsp;часа!</h3>
         <p>Британские ученые провели исследования и доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!<p>
         <a href="#">Узнать больше об исследовании</a>
       </div>
@@ -257,9 +262,15 @@
 </main>
 <footer class="page-footer page-footer--index">
   <a class="footer-logo footer-logo--index" href="index.html">
-    <svg class="logo-pink-blue-mobile" viewbox="0 0 146.3 40.375">
-      <use xlink:href="#logo-pink-blue-mobile" />
-    </svg>
+    <picture>
+          </svg>
+          <svg class="logo-pink-white-tablet" viewbox="0 0 146.3 40.375">
+            <use xlink:href="#logo-pink-white-tablet" />
+          </svg>
+          <svg class="logo-pink-white-desktop" viewbox="0 0 146.3 40.375">
+            <use xlink:href="#logo-pink-white-desktop" />
+          </svg>
+        </picture>
   </a>
   <div class="footer-socnet">
     <ul class="footer-socnet__icons">

@@ -4,6 +4,8 @@ var navMain = document.querySelector('.main-nav'),
   navToggle = document.querySelector('.main-nav__toggle'),
   mainNavList = document.querySelector('.main-nav__list'),
   logo = document.querySelector('.logo'),
+  download = document.querySelector('.download'),
+  intro = document.querySelector('.intro'),
   pageHeader = document.querySelector('.page-header'),
   pageHeaderIndex = document.querySelector('.page-header--index'),
   pageHeaderPhoto = document.querySelector('.page-header--photo'),
@@ -12,28 +14,21 @@ var navMain = document.querySelector('.main-nav'),
 pageHeader.classList.remove('page-header--nojs');
 logo.style.borderBottom = 'none';
 
-window.addEventListener('resize', function (event) {
-  'use strict';
-  event.preventDefault();
-  if (window.matchMedia('(max-width: 699px)').matches) {
-    logo.style.paddingBottom = '25px';
-  } else {
-    logo.style.paddingBottom = '43px';
-  }
-});
-
 navToggle.addEventListener('click', function (event) {
   'use strict';
   event.preventDefault();
-  if (navMain.classList.contains('main-nav--closed')) { // если гамбургер
+  if (navMain.classList.contains('main-nav--closed')) { // если кликаем по гамбургеру
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
     mainNavList.style.display = 'block';
     logo.style.borderBottom = 'solid 1px black';
     if (window.matchMedia('(max-width: 699px)').matches) {
       logo.style.paddingBottom = '25px';
-    } else {
+    } else if (window.matchMedia('(min-width: 700px)').matches && window.matchMedia('(max-width: 1199px)').matches) {
       logo.style.paddingBottom = '43px';
+      download.style.marginTop = '-270px';
+      intro.style.marginTop = '-270px';
+      pageHeaderIndex.style.minHeight = '984px';
     }
     if (pageHeaderIndex) {
       pageHeaderIndex.style.backgroundPosition = '0 435px, -190px 259px';
@@ -45,15 +40,18 @@ navToggle.addEventListener('click', function (event) {
       pageHeaderForm.style.backgroundPosition = '-190px 259px';
       pageHeaderForm.style.minHeight = '495px';
     }
-  } else { // если крестик
+  } else { // если кликаем по крестику
     navMain.classList.remove('main-nav--opened');
     navMain.classList.add('main-nav--closed');
     mainNavList.style.display = 'none';
     logo.style.borderBottom = 'none';
     if (window.matchMedia('(max-width: 699px)').matches) {
       logo.style.paddingBottom = '25px';
-    } else {
+    } else if (window.matchMedia('(min-width: 700px)').matches && window.matchMedia('(max-width: 1199px)').matches) {
       logo.style.paddingBottom = '43px';
+      download.style.marginTop = '-270px';
+      intro.style.marginTop = '-270px';
+      pageHeaderIndex.style.minHeight = '984px';
     }
     if (pageHeaderIndex) {
       pageHeaderIndex.style.backgroundPosition = '0 176px, -190px 0';

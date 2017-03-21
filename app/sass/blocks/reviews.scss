@@ -7,12 +7,19 @@
     width: 700px;
     margin-bottom: -125px;
   }
+  @media ($desktop-widths) {
+    width: 1200px;
+    top: 416px;
+  }
 }
 
 .reviews__wrapper {
   min-width: 320px;
   @media ($tablet-widths) {
     width: 700px;
+  }
+  @media ($desktop-widths) {
+    width: 1200px;
   }
 }
 
@@ -52,6 +59,10 @@ input[type=radio] {
     font-size: 20px;
     line-height: 30px;
   }
+  @media ($desktop-widths) {
+    margin-top: 293px;
+    font-size: 24px;
+  }
 }
 
 .reviews__about-author {
@@ -65,6 +76,10 @@ input[type=radio] {
     font-size: 14px;
     line-height: 30px;
     color: $gray;
+  }
+  @media ($desktop-widths) {
+    margin-top: 54px;
+    font-size: 18px;
   }
 }
 
@@ -85,6 +100,10 @@ input[type=radio] {
     font-size: 18px;
     line-height: 30px;
   }
+  @media ($desktop-widths) {
+    margin-top: -370px;
+    padding-top: 200px;
+  }
 }
 
 .reviews__slider-controls {
@@ -96,6 +115,9 @@ input[type=radio] {
   @media ($tablet-widths) {
     top: 116px;
     left: 318px;
+  }
+  @media ($desktop-widths) {
+    display: none;
   }
 }
 
@@ -151,6 +173,10 @@ input[type=radio] {
     top: -54px;
     border-width: 27px 350px;
   }
+  @media ($desktop-widths) {
+    top: -79px;
+    border-width: 40px 600px;
+  }
 }
 
 .reviews__proof {
@@ -160,6 +186,11 @@ input[type=radio] {
     width: 700px;
     min-height: 400px;
     font-size: 0;
+  }
+  @media ($desktop-widths) {
+    width: 1200px;
+    background-color: $lightgray;
+    @include clearfix;
   }
 }
 
@@ -171,6 +202,10 @@ input[type=radio] {
     min-height: 400px;
     outline: 1px solid red;
   }
+  @media ($desktop-widths) {
+    width: 480px;
+    min-height: 448px;
+  }
 }
 
 .reviews__proof--right {
@@ -181,12 +216,17 @@ input[type=radio] {
     min-height: 400px;
     outline: 1px solid red;
   }
+  @media ($desktop-widths) {
+    width: 720px;
+    min-height: 448px;
+  }
 }
 
 .reviews__proof--right h3 {
   @media ($tablet-widths) {
     display: block;
     margin-top: 97px;
+    margin-right: 60px;
     font-family: "OpenSans bold", Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
@@ -204,6 +244,9 @@ input[type=radio] {
     line-height: 24px;
     color: $gray;
   }
+  @media ($desktop-widths) {
+    font-size: 18px;
+  }
 }
 
 .reviews__proof--right a {
@@ -215,5 +258,8 @@ input[type=radio] {
     line-height: 24px;
     color: $pink;
     text-decoration: underline;
+  }
+  @media ($desktop-widths) {
+    font-size: 18px;
   }
 }

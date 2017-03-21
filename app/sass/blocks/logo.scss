@@ -17,7 +17,12 @@
     padding-right: 514px;
   }
   @media ($desktop-widths) {
-    padding-right: 1014px;
+    width: 146px;
+    height: 40px;
+    padding-top: 27px;
+    padding-left: 130px;
+    padding-bottom: 43px;
+    padding-right: 50px;
   }
   border-bottom: solid 1px $black;
   z-index: 30;

@@ -1,9 +1,12 @@
 .page-footer {
-    display: block;
-    position: relative;
-    top: 26px;
-    margin-top: 41px;
+  display: block;
+  position: relative;
+  top: 26px;
+  margin-top: 41px;
+  @media ($desktop-widths) {
+    width: 1200px;
   }
+}
 
 .page-footer--index {
   @media ($mobile-widths) {
@@ -14,6 +17,10 @@
     top: 190px;
     font-size: 0;
     @include clearfix;
+  }
+  @media ($desktop-widths) {
+    top: 375px;
+    min-height: 164px;
   }
 }
 
@@ -39,6 +46,9 @@
     width: 250px;
     margin-left: 0;
     margin-top: 20px;
+  }
+  @media ($desktop-widths) {
+    margin-left: 253px;
   }
 }
 
@@ -148,6 +158,9 @@
     width: 200px;
     float: right;
   }
+  @media ($desktop-widths) {
+    margin-right: 111px;
+  }
 }
 
 .footer-copyright__text {
@@ -155,12 +168,19 @@
     margin-left: 30px;
     margin-top: 26px;
   }
+  @media ($desktop-widths) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .footer-copyright__logo-htmlacademy svg{
   @media ($tablet-widths) {
     position: relative;
     left: -39px;
+  }
+  @media ($desktop-widths) {
+    left: -13px;
   }
 }
 

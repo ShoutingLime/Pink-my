@@ -13,12 +13,17 @@ input[type=radio] {
   line-height: 30px;
   text-transform: uppercase;
   border-collapse: collapse;
-    @media ($tablet-widths) {
-      width: 620px;
-      left: 300px;
-      top: 0;
+  @media ($tablet-widths) {
+    width: 620px;
+    left: 300px;
+    top: 0;
     }
+  @media ($desktop-widths) {
+    width: 940px;
+    left: 390px;
+    top: 67px;
   }
+}
 
 .versions__content-wrapper ul {
   display: table-row;
@@ -45,6 +50,12 @@ input[type=radio] {
     font-size: 16px;
     height: 20px;
     line-height: 15px;
+  }
+  @media ($desktop-widths) {
+    padding-top: 16px;
+    padding-bottom: 0;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -78,6 +89,12 @@ input[type=radio] {
     padding-top: 9px;
     padding-bottom: 16px;
   }
+  @media ($desktop-widths) {
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 2px;
+    padding-bottom: 19px;
+  }
 }
 
 .versions__content-wrapper ul:nth-child(2) li:nth-child(1) {
@@ -110,6 +127,9 @@ input[type=radio] {
     padding-bottom: 3px;
     padding-left: 0;
   }
+  @media ($desktop-widths) {
+    width: 235px;
+  }
 }
 
 .versions__content-wrapper--table {
@@ -141,6 +161,10 @@ input[type=radio] {
     left: -64px;
     top: -1px;
   }
+  @media ($desktop-widths) {
+    left: -104px;
+    top: -4px;
+  }
 }
 
 .icon-yes {
@@ -156,6 +180,10 @@ input[type=radio] {
   @media ($tablet-widths) {
     left: -61px;
     top: -3px;
+  }
+  @media ($desktop-widths) {
+    left: -104px;
+    top: -4px;
   }
 }
 
@@ -173,6 +201,11 @@ input[type=radio] {
     width: 60px;
     height: 60px;
     left: 311px;
+  }
+  @media ($desktop-widths) {
+    width: 75px;
+    height: 75px;
+    left: 470px;
   }
 }
 
@@ -192,6 +225,9 @@ input[type=radio] {
   z-index: 25;
   @media ($tablet-widths) {
     left: 319px;
+  }
+  @media ($desktop-widths) {
+    left: 482px;
   }
 }
 
@@ -245,6 +281,14 @@ ul li.versions_column-left {
     border-collapse: collapse;
     border-top: none;
     border-right: none;
+  }
+  @media ($desktop-widths) {
+    width: 213px;
+    padding-left: 22px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 14px;
   }
 }
 

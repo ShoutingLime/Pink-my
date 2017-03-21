@@ -8,7 +8,12 @@
     top: 293px;
     width: 700px;
     height: 495px;
-    //padding-top: 226px;
+    outline: 1px solid blue;
+  }
+  @media ($desktop-widths) {
+    top: 415px;
+    width: 1200px;
+    height: 495px;
     outline: 1px solid blue;
   }
 }
@@ -16,6 +21,9 @@
 .promo__headers {
   @media ($tablet-widths) {
     min-height: 293px;
+  }
+  @media ($desktop-widths) {
+    min-height: 319px;
   }
 }
 
@@ -34,6 +42,10 @@
     outline: 1px solid red;
     border-width: 27px 350px;
   }
+  @media ($desktop-widths) {
+    top: -93px;
+    border-width: 46px 600px;
+  }
 }
 
 .promo__header {
@@ -48,6 +60,19 @@
   @media ($tablet-widths) {
     margin-top: -288px;
     font-size: 40px;
+  }
+  @media ($desktop-widths) {
+    margin-top: -434px;
+    font-size: 50px;
+    line-height: 46px;
+  }
+}
+
+.promo__header:nth-child(2) {
+  @media ($desktop-widths) {
+    margin-left: 300px;
+    margin-right: 300px;
+    line-height: 60px;
   }
 }
 
@@ -67,6 +92,11 @@
     margin-left: 349px;
     margin-right: auto;
   }
+  @media ($desktop-widths) {
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 }
 
 .promo__feature-slogan {
@@ -80,6 +110,12 @@
   margin-top: 5px;
   @media ($tablet-widths) {
     text-align: left;
+  }
+  @media ($desktop-widths) {
+    margin-top: 330px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
   }
 }
 
@@ -97,5 +133,22 @@
     padding-right: 30px;
     text-align: left;
     margin-bottom: 29px;
+  }
+  @media ($desktop-widths) {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.promo__feature {
+  @media ($desktop-widths) {
+    width: 33.333%;
+  }
+}
+
+.promo-image {
+  @media ($desktop-widths) {
+    display: none;
   }
 }

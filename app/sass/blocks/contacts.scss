@@ -5,6 +5,10 @@
   @media ($tablet-widths) {
     width: 700px;
   }
+  @media ($desktop-widths) {
+    width: 1200px;
+    top: 400px;
+  }
 }
 
 .contacts__header {
@@ -22,6 +26,13 @@
     font-size: 40px;
     line-height: 48px;
   }
+  @media ($desktop-widths) {
+    margin-top: 68px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .contacts__list {
@@ -34,12 +45,20 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  @media ($desktop-widths) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }
 
 .contacts__item {
   @media ($tablet-widths) {
     width: 50%;
     margin-top: 3px;
+  }
+  @media ($desktop-widths) {
+    width: 33.33%;
+    margin-top: 5px;
   }
 }
 
@@ -80,12 +99,18 @@ li.contacts__item:nth-child(1) b {
   @media ($tablet-widths) {
     margin-left: -13px;
   }
+  @media ($desktop-widths) {
+    //margin-left: 110px;
+  }
 }
 
 li.contacts__item:nth-child(2) b {
   padding-bottom: 3px;
   @media ($tablet-widths) {
     margin-left: 3px;
+  }
+  @media ($desktop-widths) {
+    margin-left: -60px;
   }
 }
 
@@ -94,6 +119,10 @@ li.contacts__item:nth-child(3) b {
   @media ($tablet-widths) {
     margin-top: 18px;
     margin-left: -2px;
+  }
+  @media ($desktop-widths) {
+    margin-top: -3px;
+    margin-left: -40px;
   }
 }
 
@@ -125,6 +154,10 @@ li.contacts__item:nth-child(3) b {
     background-color: $lightgray;
     top: -17px;
   }
+  @media ($desktop-widths) {
+    width: 1200px;
+    height: 500px;
+  }
 }
 
 .icon-map-marker {
@@ -140,6 +173,10 @@ li.contacts__item:nth-child(3) b {
   @media ($tablet-widths) {
     top: 196px;
     left: 330px;
+  }
+  @media ($desktop-widths) {
+    top: 260px;
+    left: 582px;
   }
 }
 
@@ -158,5 +195,49 @@ li.contacts__item:nth-child(3) b {
   @media ($tablet-widths) {
     top: 401px;
     border-width: 70px 350px;
+  }
+  @media ($desktop-widths) {
+    top: 370px;
+    border-width: 104px 600px;
+    outline: 1px solid blue;
+  }
+}
+
+.contacts__item:nth-child(1) {
+  @media ($desktop-widths) {
+    order: 1;
+  }
+}
+
+.contacts__item:nth-child(2) {
+  @media ($desktop-widths) {
+    order: 3;
+  }
+}
+
+.contacts__item:nth-child(3) {
+  @media ($desktop-widths) {
+    order: 2;
+  }
+}
+
+.contacts__link--phone {
+  @media ($desktop-widths) {
+    margin-top: 20px;
+  }
+}
+
+.contacts__link--mail {
+  @media ($desktop-widths) {
+    margin-top: 22px;
+    margin-left: -65px;
+  }
+}
+
+.contacts__address {
+  @media ($desktop-widths) {
+    margin-top: 22px;
+    margin-left: 0;
+    margin-right: 40px;
   }
 }

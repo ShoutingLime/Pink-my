@@ -9,6 +9,11 @@
     height: 290px;
     background-color: $lightgray;
   }
+  @media ($desktop-widths) {
+    width: 1200px;
+    top: 403px;
+    min-height: 443px;
+  }
 }
 
 .price__bottom {
