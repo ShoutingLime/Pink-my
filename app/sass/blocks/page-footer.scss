@@ -19,7 +19,7 @@
     @include clearfix;
   }
   @media ($desktop-widths) {
-    top: 375px;
+    top: 248px;
     min-height: 164px;
   }
 }
@@ -186,4 +186,28 @@
 
 .page-footer--form {
   top: -90px;
+}
+
+
+@media ($tablet-widths) {
+  .logo-pink-blue-desktop {
+    display: none;
+  }
+  .logo-pink-blue-tablet {
+    display: block;
+    width: 146px;
+    height: 40px;
+  }
+}
+
+@media ($desktop-widths) {
+  .logo-pink-blue-tablet {
+    display: none;
+  }
+  .logo-pink-blue-desktop {
+    display: block;
+    width: 146px;
+    height: 40px;
+    margin-left: 92px;
+  }
 }

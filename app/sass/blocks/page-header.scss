@@ -10,9 +10,15 @@
   }
   @media ($tablet-widths) {
     min-height: 721px;
+    background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
+    background-position: 0 176px, -250px 0;
+    background-repeat: no-repeat, no-repeat;
   }
   @media ($desktop-widths) {
     min-height: 853px;
+    background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
+    background-position: 143px 208px, -682px 0;
+    background-repeat: no-repeat, no-repeat;
   }
 }
 
