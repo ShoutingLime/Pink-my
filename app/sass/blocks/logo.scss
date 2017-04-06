@@ -33,17 +33,36 @@
   .logo-pink-white-desktop {
     display: none;
   }
+  .logo-pink-white-mobile {
+    display: block;
+    fill: $white;
+    &:hover {
+      fill: $pink;
+    }
+    &:active {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media ($tablet-widths) {
   .logo-pink-white-mobile,
   .logo-pink-white-desktop {
-     display: none;
-   }
+    display: none;
+  }
   .logo-pink-white-tablet {
     display: block;
+    fill: $white;
+    &:hover {
+      fill: $pink;
+    }
+    &:active {
+      fill: $white;
+      opacity: 0.3;
+    }
   }
- }
+}
 
 @media ($desktop-widths) {
   .logo-pink-white-mobile,
@@ -52,5 +71,13 @@
   }
   .logo-pink-white-desktop {
     display: block;
+    fill: $white;
+    &:hover {
+      fill: $pink;
+    }
+    &:active {
+      fill: $white;
+      opacity: 0.3;
+    }
   }
 }

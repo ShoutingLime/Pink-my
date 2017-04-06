@@ -1,4 +1,4 @@
-/*global consol, includePaths*/
+/*global console, includePaths*/
 /*jslint node: true*/
 
 var gulp = require('gulp'),
@@ -52,6 +52,7 @@ gulp.task('sass', function () {
     }).on("error", notify.onError()))
     .pipe(plumber())
     .pipe(sass().on("error", notify.onError()))
+    .pipe(gulp.dest('app/css')) // тест
     .pipe(rename({suffix: '.min', prefix: ''}))
     .pipe(autoprefixer(['last 15 versions']))
     .pipe(cleanCSS())
@@ -70,7 +71,7 @@ gulp.task('imagemin', function () {
   'use strict';
   return gulp.src('app/img/**/*')
     .pipe(cache(imagemin()))
-    .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('symbols', function () {
@@ -84,22 +85,24 @@ gulp.task('symbols', function () {
     .pipe(gulp.dest('app/img'));
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function () {
+gulp.task('build', ['removebuild', 'imagemin', 'sass', 'scripts'], function () {
   'use strict';
   var buildFiles = gulp.src([
       'app/*.html',
       'app/.htaccess'
-    ]).pipe(gulp.dest('dist')),
+    ]).pipe(gulp.dest('build')),
     buildCss = gulp.src([
-      'app/css/main.min.css'
-    ]).pipe(gulp.dest('dist/css')),
+      'app/css/style.min.css',
+      'app/css/style.css'
+    ]).pipe(gulp.dest('build/css')),
     buildJs = gulp.src([
-      'app/js/scripts.min.js'
-    ]).pipe(gulp.dest('dist/js')),
+      'app/js/scripts.min.js',
+      'app/js/common.js'
+    ]).pipe(gulp.dest('build/js')),
     buildFonts = gulp.src([
       'app/fonts/**/*'
-    ]).pipe(gulp.dest('dist/fonts'));
-  consol.log(buildFiles, buildCss, buildJs, buildFonts);
+    ]).pipe(gulp.dest('build/fonts'));
+  console.log(buildFiles, buildCss, buildJs, buildFonts);
 });
 
 gulp.task('deploy', function () {
@@ -112,16 +115,16 @@ gulp.task('deploy', function () {
       log: gutil.log
     }),
     globs = [
-      'dist/**',
-      'dist/.htaccess'
+      'build/**',
+      'build/.htaccess'
     ];
   return gulp.src(globs, {buffer: false})
     .pipe(conn.dest('/path/to/folder/on/server'));
 });
 
-gulp.task('removedist', function () {
+gulp.task('removebuild', function () {
   'use strict';
-  return del.sync('dist');
+  return del.sync('build');
 });
 
 gulp.task('clearcache', function () {

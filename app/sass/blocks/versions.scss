@@ -31,7 +31,7 @@ input[type=radio] {
 
 .versions__content-wrapper ul:nth-child(1) li {
   background-color: $gray;
-  font-family: "OpenSans bold", sans-serif;
+  font-family: "OpenSans bold", Arial, sans-serif;
   color: $white;
   font-size: 18px;
   font-weight: 700;
@@ -69,7 +69,7 @@ input[type=radio] {
 
 .versions__content-wrapper ul:nth-child(2) li {
   background-color: $gray;
-  font-family: 'OpenSans light', sans-serif;
+  font-family: 'OpenSans light', Arial, sans-serif;
   color: $white;
   font-size: 24px;
   font-weight: 300;
@@ -98,12 +98,12 @@ input[type=radio] {
 }
 
 .versions__content-wrapper ul:nth-child(2) li:nth-child(1) {
-   @media ($tablet-widths) {
-     background-color: $lightgray;
-     width: 157px;
-     border: none;
-   }
- }
+  @media ($tablet-widths) {
+    background-color: $lightgray;
+    width: 157px;
+    border: none;
+  }
+}
 
 .versions__content-wrapper ul:nth-child(3) li {
   border-top: none;
@@ -293,11 +293,11 @@ ul li.versions_column-left {
 }
 
 .versions__content-wrapper ul:nth-child(1) li:nth-child(2) {
-   @media ($tablet-widths) {
-     width: 155px;
-     border-left: none;
-   }
- }
+  @media ($tablet-widths) {
+    width: 155px;
+    border-left: none;
+  }
+}
 
 .versions__content-wrapper ul:nth-child(2) li:nth-child(2) {
   @media ($tablet-widths) {
